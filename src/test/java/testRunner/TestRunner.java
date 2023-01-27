@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         tags = "@Google2",
         features = {"classpath:features"},
         glue = {"testRunner", "stepDefinitions"},
-        plugin = {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
+        plugin = {"pretty","html:target/report/cucumber-report.html","json:target/report/cucumber-report.json"}
 )
 
 public class TestRunner {

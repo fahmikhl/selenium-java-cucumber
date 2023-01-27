@@ -10,7 +10,7 @@ Feature: Search Google
       Then User should see search result
 
     @Google2
-    Scenario: Simple Search Google
+    Scenario: Simple Search Google with params
     #    Given User visit google page
       When User input "Pertama" search
       When User input "Kedua" search
@@ -18,7 +18,7 @@ Feature: Search Google
       Then User should see search result
 
     @Google3
-    Scenario Outline: Search Google with 3 keywords
+    Scenario Outline: Search Google with 3 keywords params
   #    Given User visit google page
       When User input <keywords> in search field
       Then User should see search result
